@@ -17,3 +17,6 @@ class Model():
         count += 1
         answ += _val
     return answ / count if count !=0 else 0
+movies_data = pd.read_csv(r'new_movie.csv')
+users_data = pd.read_csv(r'new_users.csv')
+model = Model(movies_data, users_data)
